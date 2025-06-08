@@ -6,7 +6,7 @@ from datetime import datetime
 base_currency = 'USD'
 target_currencies = ['INR', 'EUR', 'GBP', 'JPY', 'INR']
 
-db_url = os.getenv('db_url')
+db_url = os.environ['DB_URL']
 
 def fetch_exchange_rates():
     url = f'https://open.er-api.com/v6/latest/{base_currency}'
